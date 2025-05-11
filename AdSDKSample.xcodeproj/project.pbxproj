@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		259705A32DD10EF900007F2B /* KahfAdSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 259705A22DD10EF900007F2B /* KahfAdSDK */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		259705902DD10EAE00007F2B /* AdSDKSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdSDKSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -23,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				259705A32DD10EF900007F2B /* KahfAdSDK in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +70,7 @@
 			);
 			name = AdSDKSample;
 			packageProductDependencies = (
+				259705A22DD10EF900007F2B /* KahfAdSDK */,
 			);
 			productName = AdSDKSample;
 			productReference = 259705902DD10EAE00007F2B /* AdSDKSample.app */;
@@ -94,6 +100,9 @@
 			);
 			mainGroup = 259705872DD10EAE00007F2B;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				259705A12DD10EF900007F2B /* XCRemoteSwiftPackageReference "kahf-ads-ios" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 259705912DD10EAE00007F2B /* Products */;
 			projectDirPath = "";
@@ -259,6 +268,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -287,6 +297,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -322,6 +333,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		259705A12DD10EF900007F2B /* XCRemoteSwiftPackageReference "kahf-ads-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/KahfAds/kahf-ads-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		259705A22DD10EF900007F2B /* KahfAdSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 259705A12DD10EF900007F2B /* XCRemoteSwiftPackageReference "kahf-ads-ios" */;
+			productName = KahfAdSDK;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 259705882DD10EAE00007F2B /* Project object */;
 }

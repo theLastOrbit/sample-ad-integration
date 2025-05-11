@@ -1,0 +1,15 @@
+{
+  "originHash" : "88e2473d2a928053f6d2c9467ec078b9aa6f599c82344ac74c24903de1c49890",
+  "pins" : [
+    {
+      "identity" : "kahf-ads-ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/KahfAds/kahf-ads-ios.git",
+      "state" : {
+        "revision" : "133b6353e2a203eeb5641646912d0b08553f6987",
+        "version" : "1.0.2"
+      }
+    }
+  ],
+  "version" : 3
+}
