@@ -28,9 +28,12 @@ struct ContentView: View {
         }
         .padding()
         .onAppear {
+            // Must call this to get an ad.
+            // Call this on ViewDidLoad or ViewDidAppear on UIKit
             KahfAdProvider.shared.refreshAd(for: adConfig)
         }
         .onDisappear {
+            // Stop refreshing the ad when the view disappears.
             KahfAdProvider.shared.stopAutoRefresh(for: adConfig)
         }
         .onReceive(KahfAdProvider.shared.listener) { listener in
